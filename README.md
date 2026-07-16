@@ -16,7 +16,7 @@ A real-time osu!mania 4K key pattern analyzer overlay for **tosu**. Displays pat
 
 ## Prerequisites
 
-- [tosu](https://github.com/MaxOhn/tosu) - A standalone osu! server emulator
+- [tosu]([https://github.com/MaxOhn/tosu](https://github.com/tosuapp/tosu)) - A standalone osu! server emulator
 
 ## Installation
 
