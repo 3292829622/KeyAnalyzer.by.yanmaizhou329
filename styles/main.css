@@ -1,0 +1,235 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background: transparent;
+    color: #ffffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow: hidden;
+}
+
+.main-container {
+    width: 100%;
+    height: 100vh;
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    background: rgba(17, 17, 17, 0.95);
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+
+.main-container.transparent-bg {
+    background: rgba(17, 17, 17, 0.1);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    overflow: hidden;
+}
+
+.section-title {
+    font-size: 11px;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.6);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    padding-left: 6px;
+    border-left: 3px solid #e74c3c;
+}
+
+.hidden-section {
+    display: none !important;
+}
+
+.pattern-bars {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.pattern-bar-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    min-width: 0;
+}
+
+.pattern-bar-label {
+    width: 50px;
+    flex-shrink: 0;
+    font-size: 14px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.pattern-bar-track {
+    flex: 1;
+    min-width: 0;
+    height: 18px;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.pattern-bar-fill {
+    height: 100%;
+    border-radius: 4px;
+    transition: width 0.5s ease-out;
+    min-width: 0;
+}
+
+.pattern-bar-value {
+    width: 45px;
+    flex-shrink: 0;
+    font-size: 13px;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.8);
+    text-align: right;
+}
+
+.sub-pattern-bars {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+}
+
+.sub-pattern-bar-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    min-width: 0;
+}
+
+.sub-pattern-bar-label {
+    width: 70px;
+    flex-shrink: 0;
+    font-size: 11px;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.sub-pattern-bar-track {
+    flex: 1;
+    min-width: 0;
+    height: 12px;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.sub-pattern-bar-fill {
+    height: 100%;
+    border-radius: 4px;
+    transition: width 0.5s ease-out;
+    min-width: 0;
+}
+
+.sub-pattern-bar-value {
+    width: 35px;
+    flex-shrink: 0;
+    font-size: 11px;
+    color: rgba(255, 255, 255, 0.6);
+    text-align: right;
+}
+
+.timeline-section {
+    margin-top: 4px;
+}
+
+.timeline-container-wrapper {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.timeline-container {
+    display: flex;
+    height: 36px;
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 8px;
+    gap: 1px;
+    overflow: hidden;
+}
+
+.timeline-item {
+    flex-shrink: 0;
+    min-width: 4px;
+    width: 8px;
+    height: 100%;
+    border-radius: 2px;
+}
+
+.timeline-legend {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.legend-color {
+    width: 12px;
+    height: 12px;
+    border-radius: 3px;
+}
+
+.legend-text {
+    font-size: 11px;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.error-display {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #e74c3c;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-size: 13px;
+    z-index: 1000;
+}
+
+.loading {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 16px;
+    color: #e74c3c;
+    font-weight: 700;
+    z-index: 1000;
+    animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+}
+
+@media (max-width: 480px) {
+    .sub-pattern-bars {
+        grid-template-columns: 1fr;
+    }
+    
+    .timeline-item {
+        width: 6px;
+    }
+}

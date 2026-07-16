@@ -1,0 +1,5 @@
+Name: KeyAnalyzer Native
+Author: yanmaizhou329 (Native port)
+Description: osu!mania 4K Key Pattern Analyzer - Native JavaScript version, no Python backend required
+Version: 1.0.0
+Tags: key, pattern, analyzer, mania, 4K

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KeyAnalyzer Native</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <div class="main-container" id="main-container">
+        <div class="content">
+            <div id="pattern-section" class="pattern-section">
+                <div class="section-title">PATTERN RATIOS</div>
+                <div id="pattern-bars" class="pattern-bars"></div>
+            </div>
+
+            <div id="sub-pattern-section" class="sub-pattern-section">
+                <div class="section-title">SUB PATTERNS</div>
+                <div id="sub-pattern-bars" class="sub-pattern-bars"></div>
+            </div>
+
+            <div id="timeline-section" class="timeline-section">
+                <div class="section-title">TIMELINE (SUB PATTERN)</div>
+                <div id="timeline-container" class="timeline-container"></div>
+                <div id="timeline-legend" class="timeline-legend"></div>
+            </div>
+        </div>
+
+        <div id="error-display" class="error-display"></div>
+        <div id="loading" class="loading">Loading...</div>
+    </div>
+
+    <script type="module" src="js/app/main.js"></script>
+</body>
+</html>

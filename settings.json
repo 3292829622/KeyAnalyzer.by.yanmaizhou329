@@ -1,0 +1,91 @@
+[
+    {
+        "uniqueID": "hDisplay",
+        "type": "header",
+        "title": "Display",
+        "description": "",
+        "options": [],
+        "value": ""
+    },
+    {
+        "uniqueID": "showPatternRatios",
+        "type": "checkbox",
+        "title": "Show Pattern Ratios",
+        "description": "Display the pattern ratio bars (Jack, Stream, JHS, Tech).",
+        "options": [],
+        "value": true
+    },
+    {
+        "uniqueID": "showSubPatterns",
+        "type": "checkbox",
+        "title": "Show Sub Patterns",
+        "description": "Display the sub-pattern ratio bars.",
+        "options": [],
+        "value": true
+    },
+    {
+        "uniqueID": "showTimeline",
+        "type": "checkbox",
+        "title": "Show Timeline",
+        "description": "Display the timeline visualization.",
+        "options": [],
+        "value": true
+    },
+    {
+        "uniqueID": "showTimelineLegend",
+        "type": "checkbox",
+        "title": "Show Timeline Legend",
+        "description": "Display the legend for timeline colors.",
+        "options": [],
+        "value": true
+    },
+    {
+        "uniqueID": "hAppearance",
+        "type": "header",
+        "title": "Appearance",
+        "description": "",
+        "options": [],
+        "value": ""
+    },
+    {
+        "uniqueID": "transparentBackground",
+        "type": "checkbox",
+        "title": "Transparent Background",
+        "description": "Enable transparent background with blur effect.",
+        "options": [],
+        "value": false
+    },
+    {
+        "uniqueID": "backgroundOpacity",
+        "type": "options",
+        "title": "Background Opacity",
+        "description": "Set the opacity of the background.",
+        "options": [
+            "100%",
+            "95%",
+            "90%",
+            "85%",
+            "80%",
+            "70%",
+            "60%",
+            "50%"
+        ],
+        "value": "95%"
+    },
+    {
+        "uniqueID": "hBehavior",
+        "type": "header",
+        "title": "Behavior",
+        "description": "",
+        "options": [],
+        "value": ""
+    },
+    {
+        "uniqueID": "autoRefresh",
+        "type": "checkbox",
+        "title": "Auto Refresh",
+        "description": "Automatically refresh analysis when beatmap changes.",
+        "options": [],
+        "value": true
+    }
+]
